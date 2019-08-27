@@ -13,33 +13,73 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="welcomeVC" id="BYZ-38-t0r" customClass="ViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeVC" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Vwz-jp-LcL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="OJN-BM-JUn"/>
+                    <connections>
+                        <segue destination="gtu-KW-NDy" kind="push" identifier="goToRegistration" id="YVo-u5-E3J"/>
+                        <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="i5R-fd-55u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1314" y="571"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In-->
+        <scene sceneID="sus-33-TCb">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="Ka0-Ge-0ob" customClass="LoginViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfR-af-WLc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C1a-1Q-e83"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="CjR-TU-Ww5"/>
+                    <connections>
+                        <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="P01-6j-wMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezc-1K-PBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="106"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="teI-14-6vh">
+            <objects>
+                <viewController id="TcF-Hq-5Ol" customClass="ChatViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5XT-OO-3tA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dhQ-Oc-z0z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jLR-TM-bBL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQv-Av-a0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813" y="553"/>
+        </scene>
+        <!--Register-->
         <scene sceneID="7Oe-My-mFv">
             <objects>
-                <viewController id="gtu-KW-NDy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationVC" id="gtu-KW-NDy" customClass="RegisterViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WId-vo-sov">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="I5s-dF-fHQ"/>
+                        <viewLayoutGuide key="safeArea" id="gCw-NV-Ziz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Register" id="K9g-SV-N5g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFo-9J-oal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="571"/>
+            <point key="canvasLocation" x="2113" y="976"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ojB-oC-grw">
@@ -60,4 +100,7 @@
             <point key="canvasLocation" x="459" y="571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="P01-6j-wMe"/>
+    </inferredMetricsTieBreakers>
 </document>
