@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-Eb-251">
-                                <rect key="frame" x="0.0" y="88" width="375" height="600.00000000000011"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-Nk-try">
                                 <rect key="frame" x="0.0" y="733" width="375" height="45"/>
@@ -31,6 +31,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ka0-Ge-0ob" kind="push" id="Sbb-ey-Eub"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-qh-VZ1">
                                 <rect key="frame" x="0.0" y="688" width="375" height="45"/>
@@ -41,6 +44,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gtu-KW-NDy" kind="push" identifier="goToRegistration" id="Cbm-ea-u3O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,7 +66,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="OJN-BM-JUn"/>
                     <connections>
-                        <segue destination="gtu-KW-NDy" kind="push" identifier="goToRegistration" id="YVo-u5-E3J"/>
                         <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="i5R-fd-55u"/>
                     </connections>
                 </viewController>
@@ -68,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="1312.8" y="570.44334975369463"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Log In-->
         <scene sceneID="sus-33-TCb">
             <objects>
                 <viewController storyboardIdentifier="loginVC" id="Ka0-Ge-0ob" customClass="LoginViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,12 +82,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="g4h-AL-2CB">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-x7-EnU">
-                                <rect key="frame" x="0.0" y="44" width="375" height="282"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="282"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaZ-SY-IN2">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaZ-SY-IN2">
                                         <rect key="frame" x="16" y="88" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="hU2-Ca-9Te"/>
@@ -91,14 +96,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmM-Kh-hAf">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmM-Kh-hAf">
                                         <rect key="frame" x="16" y="126" width="343" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1Dp-PF-OQ6"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-CT-iDJ">
                                         <rect key="frame" x="16" y="164" width="343" height="30"/>
@@ -138,6 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C1a-1Q-e83"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Log In" id="N0b-YW-cdL"/>
                     <connections>
                         <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="P01-6j-wMe"/>
                     </connections>
@@ -146,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="2012" y="105.66502463054188"/>
         </scene>
-        <!--Title-->
+        <!--Flash Chat-->
         <scene sceneID="teI-14-6vh">
             <objects>
                 <viewController storyboardIdentifier="chatVC" id="TcF-Hq-5Ol" customClass="ChatViewController" customModule="FlashChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rj0-tG-vor">
-                                <rect key="frame" x="0.0" y="44" width="375" height="684"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="640"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="Gud-Up-Gqg">
@@ -211,7 +217,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dhQ-Oc-z0z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="jxj-BH-6Mb"/>
+                    <navigationItem key="navigationItem" title="Flash Chat" id="jxj-BH-6Mb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQv-Av-a0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,7 +253,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUp-Ul-quP">
                                         <rect key="frame" x="16" y="165" width="343" height="30"/>
@@ -258,6 +264,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="gtu-KW-NDy" eventType="touchUpInside" id="Bsr-P3-WZb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -287,6 +296,11 @@
                         <viewLayoutGuide key="safeArea" id="gCw-NV-Ziz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="K9g-SV-N5g"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="lai-e2-ADm" id="wCv-MG-TkM"/>
+                        <outlet property="passwordTextField" destination="WrS-2E-N8X" id="1IR-no-HPu"/>
+                        <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="g0v-K2-znT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFo-9J-oal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +330,6 @@
         <image name="background1" width="1200" height="795"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P01-6j-wMe"/>
+        <segue reference="g0v-K2-znT"/>
     </inferredMetricsTieBreakers>
 </document>
