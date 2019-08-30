@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-Eb-251">
-                                <rect key="frame" x="0.0" y="88" width="375" height="600.00000000000011"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-Nk-try">
                                 <rect key="frame" x="0.0" y="733" width="375" height="45"/>
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.8" y="570.44334975369463"/>
+            <point key="canvasLocation" x="1231" y="553"/>
         </scene>
         <!--Log In-->
         <scene sceneID="sus-33-TCb">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezc-1K-PBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="105.66502463054188"/>
+            <point key="canvasLocation" x="2033" y="219"/>
         </scene>
         <!--Flash Chat-->
         <scene sceneID="teI-14-6vh">
@@ -195,6 +195,9 @@
                                             <constraint firstAttribute="height" constant="30" id="gwn-xK-RAv"/>
                                         </constraints>
                                         <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="TcF-Hq-5Ol" eventType="touchUpInside" id="tJg-Cz-zW9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -229,6 +232,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTextField" destination="nyv-3s-EED" id="uKC-cN-RmA"/>
+                        <outlet property="sendButton" destination="2pk-eL-NYU" id="z5b-JK-PsA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQv-Av-a0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFo-9J-oal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="976"/>
+            <point key="canvasLocation" x="2034" y="910"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ojB-oC-grw">
@@ -333,7 +340,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JvC-32-2F0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="571"/>
+            <point key="canvasLocation" x="225" y="553"/>
         </scene>
     </scenes>
     <resources>
