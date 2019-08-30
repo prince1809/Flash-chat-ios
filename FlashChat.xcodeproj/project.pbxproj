@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A34E4CFA2318149700558758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A34E4CF92318149700558758 /* GoogleService-Info.plist */; };
+		A359752A231987F4002283FA /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3597528231987F4002283FA /* CustomMessageCell.swift */; };
+		A359752B231987F4002283FA /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3597529231987F4002283FA /* CustomMessageCell.xib */; };
 		A37355B62315E77E008C39A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37355B52315E77E008C39A2 /* AppDelegate.swift */; };
 		A37355B82315E77E008C39A2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37355B72315E77E008C39A2 /* WelcomeViewController.swift */; };
 		A37355BB2315E77E008C39A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37355B92315E77E008C39A2 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		108958E968AD3EA3E73E8558 /* Pods-FlashChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashChat/Pods-FlashChat.debug.xcconfig"; sourceTree = "<group>"; };
 		5614EF9688C7D003E2BFE123 /* Pods-FlashChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashChat/Pods-FlashChat.release.xcconfig"; sourceTree = "<group>"; };
 		A34E4CF92318149700558758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3597528231987F4002283FA /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		A3597529231987F4002283FA /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		A37355B22315E77E008C39A2 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37355B52315E77E008C39A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A37355B72315E77E008C39A2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 				5614EF9688C7D003E2BFE123 /* Pods-FlashChat.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3597527231987A9002283FA /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A3597528231987F4002283FA /* CustomMessageCell.swift */,
+				A3597529231987F4002283FA /* CustomMessageCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		A37355A92315E77E008C39A2 = {
@@ -101,6 +114,7 @@
 			children = (
 				A37355C12315E77F008C39A2 /* LaunchScreen.storyboard */,
 				A37355B92315E77E008C39A2 /* Main.storyboard */,
+				A3597527231987A9002283FA /* Custom Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +211,7 @@
 			files = (
 				A37355C32315E77F008C39A2 /* LaunchScreen.storyboard in Resources */,
 				A34E4CFA2318149700558758 /* GoogleService-Info.plist in Resources */,
+				A359752B231987F4002283FA /* CustomMessageCell.xib in Resources */,
 				A37355C02315E77F008C39A2 /* Assets.xcassets in Resources */,
 				A37355BB2315E77E008C39A2 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37355B82315E77E008C39A2 /* WelcomeViewController.swift in Sources */,
+				A359752A231987F4002283FA /* CustomMessageCell.swift in Sources */,
 				A37355B62315E77E008C39A2 /* AppDelegate.swift in Sources */,
 				A37355BE2315E77E008C39A2 /* FlashChat.xcdatamodeld in Sources */,
 				A37355D12315ED02008C39A2 /* LoginViewController.swift in Sources */,
