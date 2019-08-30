@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ChatViewController: UIViewController {
 
@@ -26,5 +27,18 @@ class ChatViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logOutPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("error occurred")
+        }
+        
+        guard (navigationController?.popToRootViewController(animated: true)) != nil  else {
+            print("No view controller to pop offf")
+            return
+        }
+        
+    }
+    
 }

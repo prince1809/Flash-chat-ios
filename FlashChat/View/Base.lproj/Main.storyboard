@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-Eb-251">
-                                <rect key="frame" x="0.0" y="88" width="375" height="600"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="600.00000000000011"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-Nk-try">
                                 <rect key="frame" x="0.0" y="733" width="375" height="45"/>
@@ -114,6 +114,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="Ka0-Ge-0ob" eventType="touchUpInside" id="i1i-qP-cV5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -145,6 +148,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="N0b-YW-cdL"/>
                     <connections>
+                        <outlet property="emailTextField" destination="KaZ-SY-IN2" id="b6R-N3-pPm"/>
+                        <outlet property="passwordTextField" destination="jmM-Kh-hAf" id="ujy-Ls-u0c"/>
                         <segue destination="TcF-Hq-5Ol" kind="push" identifier="goToChat" id="P01-6j-wMe"/>
                     </connections>
                 </viewController>
@@ -217,7 +222,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dhQ-Oc-z0z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Flash Chat" id="jxj-BH-6Mb"/>
+                    <navigationItem key="navigationItem" title="Flash Chat" id="jxj-BH-6Mb">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="DZg-Fe-xbl">
+                            <connections>
+                                <action selector="logOutPressed:" destination="TcF-Hq-5Ol" id="f1N-bG-qaR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQv-Av-a0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,6 +341,6 @@
         <image name="background1" width="1200" height="795"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g0v-K2-znT"/>
+        <segue reference="P01-6j-wMe"/>
     </inferredMetricsTieBreakers>
 </document>
