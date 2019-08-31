@@ -235,6 +235,7 @@
                     <connections>
                         <outlet property="messageTableView" destination="rj0-tG-vor" id="1lU-f5-cFd"/>
                         <outlet property="messageTextField" destination="nyv-3s-EED" id="pf4-5V-gvV"/>
+                        <outlet property="messageTextHeightConstraint" destination="1Eo-Kt-IIh" id="vJ7-hy-lYD"/>
                         <outlet property="sendButton" destination="2pk-eL-NYU" id="z5b-JK-PsA"/>
                     </connections>
                 </viewController>

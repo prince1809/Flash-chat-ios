@@ -19,6 +19,7 @@
 		A37355CF2315EB95008C39A2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37355CE2315EB95008C39A2 /* RegisterViewController.swift */; };
 		A37355D12315ED02008C39A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37355D02315ED02008C39A2 /* LoginViewController.swift */; };
 		A37355D32315EDAB008C39A2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37355D22315EDAB008C39A2 /* ChatViewController.swift */; };
+		A387C7BA231A15A10046A783 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A387C7B9231A15A10046A783 /* Message.swift */; };
 		D4D51C2904531AC14D68EE69 /* Pods_FlashChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85326B93FCC5719E6AE4F0D /* Pods_FlashChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		A37355CE2315EB95008C39A2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A37355D02315ED02008C39A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A37355D22315EDAB008C39A2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A387C7B9231A15A10046A783 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B85326B93FCC5719E6AE4F0D /* Pods_FlashChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 		A37355CA2315E98B008C39A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A387C7B9231A15A10046A783 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				A37355B62315E77E008C39A2 /* AppDelegate.swift in Sources */,
 				A37355BE2315E77E008C39A2 /* FlashChat.xcdatamodeld in Sources */,
 				A37355D12315ED02008C39A2 /* LoginViewController.swift in Sources */,
+				A387C7BA231A15A10046A783 /* Message.swift in Sources */,
 				A37355D32315EDAB008C39A2 /* ChatViewController.swift in Sources */,
 				A37355CF2315EB95008C39A2 /* RegisterViewController.swift in Sources */,
 			);
